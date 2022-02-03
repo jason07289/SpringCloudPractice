@@ -3,8 +3,10 @@ package com.jaehyuk.springCloud.service;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.springframework.beans.factory.annotation.Value;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+@Service
 public class DynamicConfigService {
 	
 	@Value("${taeng.profile}")
