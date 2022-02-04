@@ -6,3 +6,10 @@ spring:
       server:
         git:
           uri: https://github.com/jason07289/SpringCloudEx-config-repository
+    bus: # 이부분을 추가해준다.
+      enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
