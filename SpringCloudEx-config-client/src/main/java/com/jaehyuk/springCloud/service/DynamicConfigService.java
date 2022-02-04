@@ -2,11 +2,12 @@ package com.jaehyuk.springCloud.service;
 
 import java.util.HashMap;
 import java.util.Map;
-
-
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Service;
+
 @Service
+@RefreshScope // 여기가 다르다.
 public class DynamicConfigService {
 	
 	@Value("${taeng.profile}")
