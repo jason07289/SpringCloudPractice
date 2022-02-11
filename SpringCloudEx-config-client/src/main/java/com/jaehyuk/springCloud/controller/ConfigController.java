@@ -21,7 +21,7 @@ public class ConfigController {
 	}
 
 	@GetMapping(value = "/dynamic")
-	public Object getConfigFromDynamic() {//git test
+	public Object getConfigFromDynamic() {
 		return configDynamicService.getConfig();
 	}
 }
